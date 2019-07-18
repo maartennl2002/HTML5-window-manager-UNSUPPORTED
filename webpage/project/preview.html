@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+        <script>
+            var canvasWidth = 1000;
+            var canvasHeight = 500;
+        </script>
+        <script src="scaleCanvasFixedSize.js"></script>
+        <script src="input.js"></script>
+        
+        <title>Engine</title>
+    </head>
+
+    <body>
+        <div style="height:100%; width:100%;">
+            <canvas id="background" class="gameCanvas" style="position: absolute; z-index: 0"></canvas>
+            <canvas id="layer1" class="gameCanvas" style="position: absolute; z-index: 1"></canvas>
+            <canvas id="layer2" class="gameCanvas" style="position: absolute; z-index: 2"></canvas>
+            <canvas id="events" class="gameCanvas" style="position: absolute; z-index: 3"></canvas>
+        </div>
+        <script>
+            initCanvas();
+            initInput();
+        </script>
+        <script>
+            gameCanvas[1].getContext("2d").fillRect(200,0,200,300);
+            gameCanvas[0].getContext("2d").fillStyle = 'green';
+            gameCanvas[0].getContext("2d").fillRect(100,200,200,150);
+        </script>
+    </body>
+
+</html>

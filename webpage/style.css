@@ -1,0 +1,112 @@
+iframe {
+    overflow:hidden;
+    pointer-events: auto;
+    position: absolute;
+    height:calc(100% - 60px);
+    width:100%;
+}
+text{
+    color: #ffffff;
+    font-family: "Verdana", Verdana, sans-serif;
+}
+.window {
+    background-color: white;
+    display:block;
+    position: absolute;
+    margin: 0;
+    overflow: hidden;
+    width: 60%;
+    height: 30%;
+    min-width: 200px;
+    min-height: 100px;
+}
+
+.innerWindow {
+    display:block;
+    position: relative;
+    margin: 0;
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+.buttonsTop {
+    height:30px;
+    width:100%;
+    display:block;
+    cursor: move;
+    background:#595959;
+}
+
+.buttonsBottom {
+    height:30px;
+    width:100%;
+    bottom:0;
+    position:absolute;
+    display:block;
+    background:#595959;
+}
+.editor {
+    height:calc(100% - 60px);
+    width:100%;
+    display:block;
+    position:absolute;
+}
+
+.windows {
+    height:calc(100% - 30px);
+    width:100%;
+    margin: 0;
+    overflow: hidden;
+    position: absolute;
+}
+.topBar {
+    display: block;
+    position: relative;
+    height: 30px;
+    width: 100%;
+    background:#595959;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 25px;
+    z-index: 100;
+}
+
+.dropdown button {
+    margin: 0px;
+    display: block;
+    width: 160px;
+    height: 20px;
+}
+
+.show {display:block;}
+
+button {
+    cursor: pointer; cursor: hand;
+}
+
+body {
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

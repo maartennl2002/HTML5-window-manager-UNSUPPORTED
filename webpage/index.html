@@ -1,0 +1,22 @@
+<html>
+
+    <head>
+        <title>Window Manager</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="windows.js"></script>
+        <script src="dropdown.js"></script>
+    </head>
+
+    <body>
+        <div class="topBar">
+            <button id="new" class='noCloseDropdown' onclick="toggledropdown('newDropdown');">NEW</button>
+            <button id="createButton" onclick="stickAllToggle();">S</button>
+            <div id='newDropdown' class='dropdown'>
+                <button id="createJavaScriptButton" onclick="addWindow('defaultWindowTemplate.html', 'JavaScript', 'project/texteditor/textedit.html');">JavaScript</button>
+                <button id="createPreviewButton" onclick="addWindow('defaultWindowTemplate.html', 'Preview', 'project/preview.html');">Preview</button>
+            </div>
+        </div>
+        <div class="windows" id="windows"></div>
+    </body>
+
+</html>

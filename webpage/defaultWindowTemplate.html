@@ -1,0 +1,17 @@
+<div class='window' id="window[id]" onmousedown='focusWindow([id], false);' style='z-index: 10;'>
+    <div class="innerWindow" id='innerWindowDiv[id]'>
+        <div class="buttonsTop" id='buttonsTopDiv[id]' onmousedown="startMoveWindow(this.parentNode.parentNode);">
+            <text>[title]<b>:[id]</b>
+            </text>
+            <button onclick="closeWindow([id]);" style="float:right;">x</button>
+            <button onclick="fullscreen([id]);" style="float:right;">[]</button>
+            <button onclick="stickToggle([id]);" style="float:right;">S</button>
+        </div>
+        <div class="iframe" id="iframeDiv[id]">
+            <iframe src="[url]" id="iframe[id]" frameBorder="0" onload="addIframeToWindowResize(this);" stickCode="if(hide){thisElement.style.height = 'calc(100% - 30px)';}else{thisElement.style.height = 'calc(100% - 60px)';}"></iframe>
+        </div>
+        <div class="buttonsBottom" id="buttonsBottomDiv[id]" stickHide="true">
+            <button id='resizeButton' onmousedown="startResizeWindow(this.parentNode.parentNode.parentNode);" style="float:right;">*</button>
+        </div>
+    </div>
+</div>
